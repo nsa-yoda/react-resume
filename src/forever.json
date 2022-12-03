@@ -1,0 +1,10 @@
+{
+  "uid": "resume",
+  "max": 5,
+  "spinSleepTime": 1000,
+  "append": true,
+  "watch": true,
+  "script": "index.js",
+  "sourceDir": "./",
+  "args": ["--arg", "value"]
+}

@@ -1,0 +1,17 @@
+{
+  "name": {
+    "first": "John",
+    "middle": "Q.",
+    "last": "Smith"
+  },
+  "title": "Senior Software Engineer",
+  "meta": {
+    "location": "New York, NY",
+    "phone": "123-456-7890",
+    "email": "john.q.smith@example.com",
+    "socials": [
+      "github.com/johnqsmith",
+      "linkedin.com/in/johnqsmith"
+    ]
+  }
+}

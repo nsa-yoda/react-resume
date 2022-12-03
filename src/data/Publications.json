@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Google",
+    "description": "A simple search engine",
+    "url": "google.com"
+  },
+  {
+    "name": "Google",
+    "description": "A simple search engine",
+    "url": "google.com"
+  },
+  {
+    "name": "OBD: One Big Data",
+    "description": "Paper about exploring big data",
+    "url": "research.google.com"
+  }
+]
