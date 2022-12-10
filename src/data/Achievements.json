@@ -1,7 +1,10 @@
 [
   {
-    "name": "",
-    "description": "",
-    "year": ""
+    "name": "Achievement",
+    "description": "A major achievement",
+    "year": "1999",
+    "meta": {
+      "display": true
+    }
   }
 ]

@@ -1,5 +1,5 @@
 import "./Glance.css";
-import glance from "../../../data/AtAGlance.json";
+import glance from "../../../data/Glance.json";
 import {replaceYearsExperience} from "../../../utils";
 
 const AtAGlanceFactory = () => {
@@ -16,7 +16,7 @@ const AtAGlanceFactory = () => {
 
 export default function Glance(){
   return (
-    <div id="glance" className="section">
+    glance.length > 0 && <div id="glance" className="section">
       <h2 className="row">At A Glance</h2>
       { AtAGlanceFactory() }
     </div>

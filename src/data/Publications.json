@@ -2,16 +2,25 @@
   {
     "name": "Google",
     "description": "A simple search engine",
-    "url": "google.com"
+    "url": "google.com",
+    "meta": {
+      "display": true
+    }
   },
   {
     "name": "Google",
     "description": "A simple search engine",
-    "url": "google.com"
+    "url": "google.com",
+    "meta": {
+      "display": true
+    }
   },
   {
     "name": "OBD: One Big Data",
     "description": "Paper about exploring big data",
-    "url": "research.google.com"
+    "url": "research.google.com",
+    "meta": {
+      "display": true
+    }
   }
 ]

@@ -1,16 +1,29 @@
 import "./Information.css";
 import information from "../../../data/Information.json";
+import isUrl from "../../../utils/utils";
+import normalizeUrl from "normalize-url";
 
 const InformationSocials = () => {
   return information.meta.socials.map((social, index) => {
+    const wrapper = (social) => {
+      if (isUrl(social)){
+        return (
+          <a href={normalizeUrl(social)} rel="noreferrer" target="_blank">{social}</a>
+        )
+      }
+      return social;
+    }
+
     return (
-      <li key={index}>{social}</li>
+      <li key={index}>{wrapper(social)}</li>
     )
   })
 }
 export default function Information(){
+  const email = information.meta.email.address
+  const link = information.meta.email.link
   return (
-    <div id="vital_information" className="section">
+    information.meta.display && <div id="vital_information" className="section">
       <div className="row">
         <div id="name" className="col text-left">
           <h1 id="first_name">
@@ -24,9 +37,9 @@ export default function Information(){
         <div id="contact_information" className="col text-right">
           <div className="row">
             <ul id="contact_information_list">
-              <li>{information.meta.location}</li>
-              <li>{information.meta.phone}</li>
-              <li>{information.meta.email}</li>
+              {information.meta.location && <li>{information.meta.location}</li>}
+              {information.meta.phone && <li>{information.meta.phone}</li>}
+              {email && <li>{link ? <a href={`mailto:${email}`}>{email}</a> : email}</li>}
               { InformationSocials() }
             </ul>
           </div>
@@ -35,3 +48,5 @@ export default function Information(){
     </div>
   )
 }
+
+

@@ -19,7 +19,7 @@ const SkillsFactory = () => {
 
 export default function Skills() {
   return (
-    <div id="skills" className="section">
+    skills.length > 0 && <div id="skills" className="section">
       <h2 className="row">Skills</h2>
       <div className="row">
         { SkillsFactory() }

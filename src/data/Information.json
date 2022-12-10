@@ -8,10 +8,14 @@
   "meta": {
     "location": "New York, NY",
     "phone": "123-456-7890",
-    "email": "john.q.smith@example.com",
+    "email": {
+      "address": "john.q.smith@example.com",
+      "link": false
+    },
     "socials": [
       "github.com/johnqsmith",
       "linkedin.com/in/johnqsmith"
-    ]
+    ],
+    "display": true
   }
 }
