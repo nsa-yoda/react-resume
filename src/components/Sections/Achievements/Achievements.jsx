@@ -12,6 +12,7 @@ const AchievementsFactory = () => {
     )
   })
 }
+
 export default function Achievements() {
     return (
       achievements.length > 0 && <div id="achievements" className="section">
