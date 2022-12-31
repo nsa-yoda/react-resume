@@ -7,7 +7,7 @@
 3. Run `npm i` to install the requirements
 4. Run `npm run start`
 
-<img width="827" alt="image" src="https://user-images.githubusercontent.com/1890716/205427669-9f027dd0-d2d9-4b81-9f3a-b754c5970800.png">
+<img width="771" alt="image" src="https://user-images.githubusercontent.com/1890716/206880087-589ec080-2b36-41dc-9f99-72ed3f2e9a78.png">
 
 
 ## Available Scripts
