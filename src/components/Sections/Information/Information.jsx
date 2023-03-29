@@ -19,6 +19,7 @@ const InformationSocials = () => {
     )
   })
 }
+
 export default function Information(){
   const email = information.meta.email.address
   const link = information.meta.email.link
