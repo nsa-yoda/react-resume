@@ -1,21 +1,18 @@
 {
   "name": {
-    "first": "John",
-    "middle": "Q.",
-    "last": "Smith"
+    "first": "Kian",
+    "middle": "T.",
+    "last": "Jumawid"
   },
-  "title": "Senior Software Engineer",
+  "title": "Student",
   "meta": {
-    "location": "New York, NY",
-    "phone": "123-456-7890",
+    "location": "Paramus, NJ",
+    "phone": "551-222-9571",
     "email": {
-      "address": "john.q.smith@example.com",
+      "address": "kianwaga@gmail.com",
       "link": false
     },
-    "socials": [
-      "github.com/johnqsmith",
-      "linkedin.com/in/johnqsmith"
-    ],
+    "socials": [],
     "display": true
   }
 }

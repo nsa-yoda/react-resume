@@ -1,33 +1,16 @@
 [
   {
     "degree": {
-      "short_name": "Computer Science",
-      "long_name": "Bachelor of Science in Computer Science"
+      "short_name": "High School Diploma",
+      "long_name": "June 2024 Completion | 3.95 GPA"
     },
     "school": {
-      "name": "React University",
-      "location": "React, NY"
+      "name": "Paramus High School",
+      "location": "Paramus, NJ"
     },
     "dates": {
-      "start": "2022-01-01",
-      "end": "2022-01-02"
-    },
-    "meta": {
-      "display": true
-    }
-  },
-  {
-    "degree": {
-      "short_name": "Computer Science",
-      "long_name": "Bachelor of Science in Computer Science"
-    },
-    "school": {
-      "name": "React University",
-      "location": "React, NY"
-    },
-    "dates": {
-      "start": "2022-01-01",
-      "end": "2022-01-02"
+      "start": "2020-01-02",
+      "end": "2024-06-24"
     },
     "meta": {
       "display": true

@@ -10,6 +10,10 @@
 <img width="771" alt="image" src="https://user-images.githubusercontent.com/1890716/206880087-589ec080-2b36-41dc-9f99-72ed3f2e9a78.png">
 
 
+## Running Pretty
+
+Pretty is set up to run on git commit, but please also do `npx prettier --write "./**/*.jsx"`
+
 ## Available Scripts
 
 In the project directory, you can run:
