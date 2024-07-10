@@ -1,13 +1,31 @@
 [
-  "Cooking",
-  "Adaptability",
-  "Fast Learner",
+  "JavaScript",
+  "Python",
+  "Go",
+  "PHP",
+  "SQL",
 
-  "Computer Skills",
-  "Self Motivated",
-  "Organization",
+  "React",
+  "Laravel",
+  "Symfony",
+  "Flask",
+  "Drupal",
+
+  "Full-Stack Development",
+  "System Design",
+  "Cloud Computing",
+  "Software Architecture",
+  "Agile Methodologies",
+
+  "Problem Solving",
+  "Team Collaboration",
+  "Project Management",
+  "Code Review",
+  "Continuous Integration/Continuous Deployment (CI/CD)",
 
   "English",
-  "Tagalog",
-  "Binisayâ"
+  "Adaptability",
+  "Self-Motivated",
+  "Organization",
+  "Fast Learner"
 ]

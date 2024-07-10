@@ -1,21 +1,78 @@
 [
   {
     "company": {
-      "name": "Current Employer",
-      "type": "Finance",
-      "location": "Windsor, CT"
+      "name": "Google",
+      "type": "Technology",
+      "location": "Mountain View, CA"
     },
     "meta": {
       "display": true,
-      "class": "employer-class-name",
+      "class": "google",
       "type": "full-time",
       "remote": "remote"
     },
     "dates": {
-      "start": "2001-01-01",
+      "start": "2018-05-01",
       "end": "Present"
     },
     "title": "Senior Software Engineer",
-    "responsibilities": "These were my responsibilities"
+    "responsibilities": "Led the development of scalable web applications, mentored junior developers, and implemented CI/CD pipelines."
+  },
+  {
+    "company": {
+      "name": "Amazon",
+      "type": "Cloud Computing",
+      "location": "Seattle, WA"
+    },
+    "meta": {
+      "display": true,
+      "class": "amazon",
+      "type": "full-time",
+      "remote": "hybrid"
+    },
+    "dates": {
+      "start": "2013-08-01",
+      "end": "2018-04-30"
+    },
+    "title": "Software Engineer",
+    "responsibilities": "Developed and maintained software solutions, collaborated with cross-functional teams, and performed code reviews to ensure high-quality code."
+  },
+  {
+    "company": {
+      "name": "Facebook",
+      "type": "Social Media",
+      "location": "Menlo Park, CA"
+    },
+    "meta": {
+      "display": true,
+      "class": "facebook",
+      "type": "full-time",
+      "remote": "on-site"
+    },
+    "dates": {
+      "start": "2008-01-01",
+      "end": "2013-07-31"
+    },
+    "title": "Full-Stack Developer",
+    "responsibilities": "Worked on front-end and back-end development, optimized database queries, and implemented responsive design practices."
+  },
+  {
+    "company": {
+      "name": "Microsoft",
+      "type": "Technology",
+      "location": "Redmond, WA"
+    },
+    "meta": {
+      "display": true,
+      "class": "microsoft",
+      "type": "full-time",
+      "remote": "on-site"
+    },
+    "dates": {
+      "start": "2006-06-01",
+      "end": "2007-12-31"
+    },
+    "title": "Junior Software Developer",
+    "responsibilities": "Assisted in the development of web applications, wrote unit tests, and participated in agile development processes."
   }
 ]

@@ -1,16 +1,40 @@
 [
   {
-    "name": "Honor Roll",
-    "description": "",
-    "year": "2020-2025",
+    "name": "Published Author of Multiple Technical Articles",
+    "description": "Authored several well-received articles on full-stack development, system design, and cloud computing.",
+    "year": "2010-Present",
     "meta": {
-      "display": false
+      "display": true
     }
   },
   {
-    "name": "Honor Roll",
-    "description": "",
-    "year": "2020-2025",
+    "name": "Developed and Released Popular Software Tools",
+    "description": "Created widely-used tools like DevFlow, CodeGuard, and CloudSync, which have received accolades in the tech community.",
+    "year": "2015-Present",
+    "meta": {
+      "display": true
+    }
+  },
+  {
+    "name": "Guest Speaker at Tech Conferences",
+    "description": "Invited to speak at prestigious conferences such as TechCrunch Disrupt, Google I/O, and AWS re:Invent.",
+    "year": "2012-Present",
+    "meta": {
+      "display": true
+    }
+  },
+  {
+    "name": "Ph.D. in Computer Science from Harvard University",
+    "description": "Completed a Ph.D. with a focus on Artificial Intelligence and Machine Learning.",
+    "year": "2012",
+    "meta": {
+      "display": true
+    }
+  },
+  {
+    "name": "Recipient of the ACM Distinguished Engineer Award",
+    "description": "Recognized for significant contributions to the field of computer science and software engineering.",
+    "year": "2020",
     "meta": {
       "display": true
     }

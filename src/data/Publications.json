@@ -1,8 +1,38 @@
 [
   {
-    "name": "Google",
-    "description": "A giant search engine",
-    "url": "google.com",
+    "name": "Optimizing Full-Stack Development for Scalability",
+    "description": "An in-depth guide on building scalable full-stack applications.",
+    "url": "https://example.com/optimizing-full-stack-development",
+    "display": true
+  },
+  {
+    "name": "Advanced Techniques in System Design",
+    "description": "A comprehensive resource on advanced system design methodologies.",
+    "url": "https://example.com/advanced-system-design",
+    "display": true
+  },
+  {
+    "name": "Cloud Computing Best Practices",
+    "description": "A detailed exploration of best practices in cloud computing.",
+    "url": "https://example.com/cloud-computing-best-practices",
+    "display": true
+  },
+  {
+    "name": "DevFlow",
+    "description": "An innovative CI/CD pipeline tool for streamlined software deployment.",
+    "url": "https://example.com/devflow",
+    "display": true
+  },
+  {
+    "name": "CodeGuard",
+    "description": "A robust code review and quality assurance tool for development teams.",
+    "url": "https://example.com/codeguard",
+    "display": true
+  },
+  {
+    "name": "CloudSync",
+    "description": "A seamless file synchronization solution for cloud storage services.",
+    "url": "https://example.com/cloudsync",
     "display": true
   }
 ]

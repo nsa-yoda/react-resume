@@ -1,17 +1,53 @@
 [
   {
     "degree": {
-      "short_name": "High School Diploma",
-      "long_name": "June 2024 Completion | 3.95 GPA"
+      "short_name": "B.S in Computer Science",
+      "long_name": "Bachelor of Science in Computer Science, Summa Cum Laude | 3.95 GPA"
     },
     "school": {
-      "name": "High School",
-      "location": "USA"
+      "name": "MIT",
+      "location": "Cambridge, MA"
     },
     "dates": {
       "showDate": true,
-      "start": "2020-01-02",
-      "end": "2024-06-24"
+      "start": "2002-09-01",
+      "end": "2006-06-01"
+    },
+    "meta": {
+      "display": true
+    }
+  },
+  {
+    "degree": {
+      "short_name": "M.S in Computer Science",
+      "long_name": "Master of Science in Computer Science, Honors | 4.0 GPA"
+    },
+    "school": {
+      "name": "Stanford University",
+      "location": "Stanford, CA"
+    },
+    "dates": {
+      "showDate": true,
+      "start": "2006-09-01",
+      "end": "2008-06-01"
+    },
+    "meta": {
+      "display": true
+    }
+  },
+  {
+    "degree": {
+      "short_name": "Ph.D. in Computer Science",
+      "long_name": "Ph.D. in Computer Science | Focus on Artificial Intelligence and Machine Learning"
+    },
+    "school": {
+      "name": "Harvard University",
+      "location": "Cambridge, MA"
+    },
+    "dates": {
+      "showDate": true,
+      "start": "2008-09-01",
+      "end": "2012-06-01"
     },
     "meta": {
       "display": true
