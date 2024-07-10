@@ -4,13 +4,13 @@ import publications from '../../../data/Publications.json'
 const PublicationFactory = () => {
   return publications.map((pub, index) => {
     return (
-      pub.meta.display && (
+      pub.display && (
         <div key={index} className='row separator'>
           <span className='col-2'>
             <strong>{pub.name}</strong>
           </span>
           <span className='col-8'>{pub.description}</span>
-          <span className='col-2 blue-span float-right'>{pub.url}</span>
+          <a href={"https://" + pub.url} target="_blank" rel="noreferrer" className="col-2 blue-span float-right">{pub.url}</a>
         </div>
       )
     )

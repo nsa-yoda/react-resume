@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "name": "Google",
+    "description": "A giant search engine",
+    "url": "google.com",
+    "display": true
+  }
+]

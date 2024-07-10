@@ -12,7 +12,11 @@
       "address": "example@example.com",
       "link": false
     },
-    "socials": [],
+    "socials": [
+      "facebook.com/okok",
+      "https://twitter.com/okok",
+      "okok"
+    ],
     "display": true
   }
 }
