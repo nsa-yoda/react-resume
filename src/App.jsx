@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css'
 
 import Header from './components/Header/Header'
@@ -16,18 +17,18 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        <Header></Header>
-        <div className='container'>
-          <Information></Information>
-          <Summary></Summary>
-          <Glance></Glance>
-          <Skills></Skills>
-          <Experience></Experience>
-          <Education></Education>
-          <Achievements></Achievements>
-          <Publications></Publications>
+        <Header />
+        <div className='container exp-container'>
+          <Information />
+          <Summary />
+          <Glance />
+          <Skills />
+          <Experience />
+          <Education />
+          <Achievements />
+          <Publications />
         </div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </BrowserRouter>
   )
