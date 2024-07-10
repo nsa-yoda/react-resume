@@ -1,9 +1,14 @@
 # React Resume 
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./public/logo/grun.png">
+  <img alt="React Resume Logo" src="./public/logo/stark.png">
+</picture>
+
 ## Getting Started
 
 1. Fill out the JSON files within the `data/` directory
-2. Edit `public/index.html` for the correct page title
+2. Edit `public/index.html` with the correct page `<title/>`
 3. Run `npm i` to install the requirements
 4. Run `npm run start`
 

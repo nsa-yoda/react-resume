@@ -1,26 +1,56 @@
+/*+-----------------------------
+ || Sticky Footer Styles
+ ++-----------------------------*/
 html {
     position: relative;
     min-height: 100%;
 }
+
 body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
+
 .footer {
     position: absolute;
+    bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 120px;
+    height: 60px;
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
+}
+
+@media print {
+    .footer {
+        display: none;
+    }
+}
+
+
+/*+-----------------------------
+ || Highlighter Styles
+ ++-----------------------------*/
+mark {
+    color: blue;
+}
+
+
+/*+-----------------------------
+ || Helper Classes
+ ++-----------------------------*/
+.hidden {
+    display: none;
 }
 
 .hide {
     display: none;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
+/*+-----------------------------
+ || Page CSS
+ ++-----------------------------*/
 .container {
     width: auto;
     max-width: 860px;
@@ -31,72 +61,99 @@ body {
     margin-bottom: 1rem;
 }
 
+.date {
+    font-style: italic;
+}
 
-/* Vital Information */
-#vital_information{
+.title {
+    font-weight: 600;
+}
+
+.blue-span {
+    color: rgba(25, 5, 255, 0.4);
+}
+
+/*+---------------------------------------
+ || Section Styles: Vital Information
+ ++---------------------------------------*/
+#vital_information {
     margin-top: 20px;
 }
+
 #contact_information_list {
     margin-bottom: 2px;
     list-style-type: none;
     width: 100%;
 }
-#address { }
-#phone { }
-#email { }
-#linkedin { }
-#website { }
+
+#address {
+}
+
+#phone {
+}
+
+#email {
+}
+
+#linkedin {
+}
+
+#website {
+}
+
 #name {
     padding-left: 0 !important;
 }
-#summary_text{
+
+#summary_text {
     padding-right: 0 !important;
 }
 
 
-/* Icons */
+/*+---------------------------------------
+ || Icons
+ ++---------------------------------------*/
 span[class^="icon-"] {
     display: inline-block;
 }
 
 .icon-email {
-    width: 23px; height: 15px;
+    width: 23px;
+    height: 15px;
     background: url('css_sprites.png') -94px -2px;
 }
 
 .icon-phone {
-    width: 18px; height: 18px;
+    width: 18px;
+    height: 18px;
     background: url('css_sprites.png') -2px -2px;
 }
 
 .icon-address {
-    width: 20px; height: 20px;
+    width: 20px;
+    height: 20px;
     background: url('css_sprites.png') -46px -2px;
 }
 
 .icon-web {
-    width: 20px; height: 20px;
+    width: 20px;
+    height: 20px;
     background: url('css_sprites.png') -70px -2px;
 }
 
 .icon-linkedin {
-    width: 18px; height: 18px;
+    width: 18px;
+    height: 18px;
     background: url('css_sprites.png') -24px -2px;
 }
 
-/* Sections */
-.date {
-    font-style: italic;
-}
-.title {
-    font-weight: 600;
-}
-.blue-span{
-    color: rgba(25, 5, 255, 0.4);
-}
+/*+---------------------------------------
+ || Section Styles: Responsibilities
+ ++---------------------------------------*/
 .responsibilities {
-
+    padding-top: 5px;
 }
+
 .job {
     width: 100% !important;
 }
