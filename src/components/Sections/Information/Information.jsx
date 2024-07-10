@@ -2,7 +2,7 @@ import * as React from "react";
 import {useSearchParams} from "react-router-dom";
 import './Information.css'
 import information from '../../../data/Information.json'
-import isUrl from '../../../utils/utils'
+import isUrl from '../../../utils'
 import normalizeUrl from 'normalize-url'
 
 const InformationSocials = () => {
