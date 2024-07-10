@@ -9,6 +9,7 @@
       "location": "USA"
     },
     "dates": {
+      "showDate": true,
       "start": "2020-01-02",
       "end": "2024-06-24"
     },
