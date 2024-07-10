@@ -44,7 +44,8 @@ const ExperienceFactory = () => {
                         <div className="date col-8" title={`${experience.dates.start} to ${experience.dates.end}`}>
                             {formatDate(experience.dates.start)} {experience.dates.end ? arrowSymbol : ""} {formatDate(experience.dates.end)}
                         </div>
-                        <div className="col-4 float-right">{experience.company.type}
+                        <div className="col-4 float-right">
+                            {experience.company.type}
                             {experience.meta.remote === "remote" ? ", Remote" : ""}
                             {experience.meta.remote === "hybrid" ? ", Hybrid" : ""}
                             {experience.meta.remote === "in-person" ? ", In Person" : ""}
@@ -74,7 +75,7 @@ export default function Experience() {
                 <figcaption className={"blockquote-footer"}>
                     Key &raquo; C: Contract, FT: Full Time, PT: Part Time &laquo;
                 </figcaption>
-                {ExperienceFactory()}
+                { ExperienceFactory() }
             </div>
         )
     )

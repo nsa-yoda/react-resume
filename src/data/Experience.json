@@ -1,2 +1,22 @@
 [
+
+  {
+    "company": {
+      "name": "Current Employer",
+      "type": "Finance",
+      "location": "Windsor, CT"
+    },
+    "meta": {
+      "display": true,
+      "class": "employer-class-name",
+      "type": "full-time",
+      "remote": "remote"
+    },
+    "dates": {
+      "start": "2001-01-01",
+      "end": "Present"
+    },
+    "title": "Senior Software Engineer",
+    "responsibilities": "These were my responsibilities"
+  }
 ]
