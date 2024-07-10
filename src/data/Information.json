@@ -1,15 +1,15 @@
 {
   "name": {
-    "first": "Kian",
-    "middle": "T.",
-    "last": "Jumawid"
+    "first": "Johnny",
+    "middle": "B.",
+    "last": "Good"
   },
-  "title": "Student",
+  "title": "Software Engineer",
   "meta": {
-    "location": "Paramus, NJ",
-    "phone": "551-222-9571",
+    "location": "Everytown, USA",
+    "phone": "",
     "email": {
-      "address": "kianwaga@gmail.com",
+      "address": "example@example.com",
       "link": false
     },
     "socials": [],
