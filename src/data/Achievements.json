@@ -4,6 +4,14 @@
     "description": "",
     "year": "2020-2025",
     "meta": {
+      "display": false
+    }
+  },
+  {
+    "name": "Honor Roll",
+    "description": "",
+    "year": "2020-2025",
+    "meta": {
       "display": true
     }
   }
