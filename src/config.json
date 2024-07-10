@@ -1,0 +1,32 @@
+{
+  "achievements": {
+    "title": "Awards, Achievements, and Certifications",
+    "displaySeparator": true
+  },
+  "education": {
+    "title": "Education"
+  },
+  "experience": {
+    "title": "Experience",
+    "workType": [
+      {"short": "C", "long": "Contract", "metaType": "contract"},
+      {"short":  "FT", "long": "Full Time", "metaType": "full-time"},
+      {"short":  "PT", "long": "Part Time", "metaType": "part-time"},
+      {"short":  "I", "long": "Internship", "metaType": "internship"},
+      {"short":  "W", "long": "Weekend", "metaType": "weekend"}
+    ],
+    "workTypeKey": "Key"
+  },
+  "at-a-glance": {
+    "title": "At A Glance"
+  },
+  "publications": {
+    "title": "Publications and Software",
+    "displaySeparator": true
+  },
+  "skills": {
+    "title": "Skills",
+    "columns": 4,
+    "arrow": "\u276F"
+  }
+}

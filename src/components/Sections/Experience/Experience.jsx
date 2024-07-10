@@ -1,42 +1,15 @@
 import './Experience.css'
 import experiences from '../../../data/Experience.json'
-import highlightWords from '../../../data/Highlighter.json'
-import { formatDate } from '../../../utils'
-
-const Highlighter = input => {
-  let words = input.split(/\s+/)
-
-  // Iterate over each word and wrap it in <mark> tags if it matches any word in the highlight list
-  let highlightedWords = words.map(word => {
-    // Remove punctuation from the word for accurate matching
-    let cleanedWord = word.replace(/[.,!?;:()]/g, '')
-    if (highlightWords.includes(cleanedWord.toLowerCase())) {
-      return `<mark>${word}</mark>`
-    }
-    return word
-  })
-
-  return highlightedWords.join(' ')
-}
+import { config, formatDate, Highlighter } from '../../../utils'
 
 const ExperienceFactory = () => {
   const arrowSymbol = String.fromCodePoint(0x02794)
 
   const metaTypeFinder = metaType => {
-    let output = ''
-    switch (metaType) {
-      case 'contract':
-        output = 'C'
-        break
-      case 'full-time':
-        output = 'FT'
-        break
-      case 'part-time':
-        output = 'PT'
-        break
-      default:
-        output = ''
-    }
+    const workType = config('experience.workType', {})
+    const type = workType.find(item => item.metaType === metaType)
+    const output = type ? type.short : ''
+
     if (output.length > 0) {
       return '[' + output + ']'
     }
@@ -90,14 +63,27 @@ const ExperienceFactory = () => {
   })
 }
 
+const generateWorkTypeKey = () => {
+  const workType = config('experience.workType', {})
+  const keyString = workType
+    .map(item => `${item.short}: ${item.long}`)
+    .join(', ')
+  return (
+    config('experience.workTypeKey', 'Key') + ` &raquo; ${keyString} &laquo;`
+  )
+}
+
 export default function Experience() {
   return (
     experiences.length > 0 && (
       <div className='section' id='experience'>
-        <h2 className='row'>Experience</h2>
-        <figcaption className={'blockquote-footer'}>
-          Key &raquo; C: Contract, FT: Full Time, PT: Part Time &laquo;
-        </figcaption>
+        <h2 className='row'>{config('experience.title', 'Experience')}</h2>
+        <figcaption
+          className={'blockquote-footer'}
+          dangerouslySetInnerHTML={{
+            __html: generateWorkTypeKey(),
+          }}
+        />
         {ExperienceFactory()}
       </div>
     )

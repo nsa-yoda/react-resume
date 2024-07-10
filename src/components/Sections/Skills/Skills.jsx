@@ -1,21 +1,22 @@
-import "./Skills.css";
-import skills from "../../../data/Skills.json";
-import {rand} from "../../../utils";
+import './Skills.css'
+import skills from '../../../data/Skills.json'
+import { rand, config } from '../../../utils'
 
 const SkillsFactory = () => {
-  let output = [];
-  let arrow = "\u276F";
-  let skillsColumns = 6;
-  let sliceLen = Math.ceil(skills.length / skillsColumns);
+  let output = []
+  let arrow = config('skills.arrow', '\u276F')
+  let skillsColumns = config('skills.columns', 4)
+  let sliceLen = Math.ceil(skills.length / skillsColumns)
 
-  for(let i = 0; i < skills.length; i+=sliceLen){
-    let slice = skills.slice(i, i+sliceLen)
+  for (let i = 0; i < skills.length; i += sliceLen) {
+    let slice = skills.slice(i, i + sliceLen)
     output.push(
-      <div key={rand()} className="col">
-        <div>{slice[0] && arrow} {slice[0]}</div>
-        <div>{slice[1] && arrow} {slice[1]}</div>
-        <div>{slice[2] && arrow} {slice[2]}</div>
-        <div>{slice[3] && arrow} {slice[3]}</div>
+      <div className='col' key={rand()}>
+        {slice.map((skill, index) => (
+          <div key={index}>
+            {arrow} {skill}
+          </div>
+        ))}
       </div>
     )
   }
@@ -25,8 +26,8 @@ const SkillsFactory = () => {
 export default function Skills() {
   return (
     skills.length > 0 && (
-      <div id='skills' className='section'>
-        <h2 className='row'>Skills</h2>
+      <div className='section' id='skills'>
+        <h2 className='row'>{config('skills.title', 'Skills')} </h2>
         <div className='row'>{SkillsFactory()}</div>
       </div>
     )
