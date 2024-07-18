@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useSearchParams} from "react-router-dom";
 import './Information.css'
-import information from '../../../data/Information.json'
+import {information} from '../../../data'
 import isUrl from '../../../utils'
 import normalizeUrl from 'normalize-url'
 

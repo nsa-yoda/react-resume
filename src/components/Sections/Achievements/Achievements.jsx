@@ -1,5 +1,5 @@
 import './Achievements.css'
-import achievements from '../../../data/Achievements.json'
+import {achievements} from '../../../data';
 import { config } from '../../../utils'
 
 const AchievementsFactory = () => {

@@ -1,5 +1,5 @@
 import './Experience.css'
-import experiences from '../../../data/Experience.json'
+import {experiences} from '../../../data'
 import { config, formatDate, Highlighter } from '../../../utils'
 
 const ExperienceFactory = () => {

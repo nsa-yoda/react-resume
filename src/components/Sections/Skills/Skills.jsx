@@ -1,5 +1,5 @@
 import './Skills.css'
-import skills from '../../../data/Skills.json'
+import {skills} from '../../../data'
 import { rand, config } from '../../../utils'
 
 const SkillsFactory = () => {

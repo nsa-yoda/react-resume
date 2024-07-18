@@ -1,5 +1,5 @@
 import './Summary.css'
-import summary from '../../../data/Summary.json'
+import {summary} from '../../../data'
 
 export default function Summary() {
   return (

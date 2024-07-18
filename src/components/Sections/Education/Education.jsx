@@ -1,5 +1,5 @@
 import './Education.css'
-import education from '../../../data/Education.json'
+import {education} from '../../../data'
 import { config, formatDate } from '../../../utils'
 
 function EducationFactory() {

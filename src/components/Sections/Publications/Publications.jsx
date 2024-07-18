@@ -1,5 +1,5 @@
 import './Publications.css'
-import publications from '../../../data/Publications.json'
+import {publications} from '../../../data'
 import { config } from '../../../utils'
 
 const PublicationFactory = () => {

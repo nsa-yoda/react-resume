@@ -1,5 +1,5 @@
 import './Glance.css'
-import glance from '../../../data/AtAGlance.json'
+import {glance} from '../../../data'
 import { config, replaceYearsExperience } from '../../../utils'
 
 const AtAGlanceFactory = () => {
