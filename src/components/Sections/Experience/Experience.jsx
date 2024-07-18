@@ -18,7 +18,7 @@ const ExperienceFactory = () => {
 
   return experiences.map((experience, index) => {
     return (
-      experience.meta.display && (
+      experience.meta.display === true && (
         <div key={index}>
           <div className={`job ${experience.meta.class}`}>
             <div className='row'>
