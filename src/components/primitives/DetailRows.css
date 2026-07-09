@@ -1,0 +1,36 @@
+.detail-row {
+  align-items: flex-start;
+}
+
+.detail-copy {
+  padding-bottom: 0.5rem;
+}
+
+.detail-title {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.detail-description {
+  line-height: 1.5;
+}
+
+.detail-aside {
+  display: block;
+  text-align: left;
+}
+
+.detail-separator:not(:last-child) {
+  border-bottom: 1px solid rgba(238, 238, 238, 0.5);
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .detail-copy {
+    padding-bottom: 0;
+  }
+
+  .detail-aside {
+    text-align: right;
+  }
+}

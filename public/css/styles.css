@@ -90,6 +90,13 @@ mark {
     width: 100%;
 }
 
+.contact-information-list {
+    list-style-type: none;
+    margin-bottom: 2px;
+    padding-left: 0;
+    width: 100%;
+}
+
 #address {
 }
 
@@ -152,12 +159,36 @@ span[class^="icon-"] {
 }
 
 /*+---------------------------------------
- || Section Styles: Responsibilities
+ || Section Styles: responsibility
  ++---------------------------------------*/
-.responsibilities {
+.responsibility {
     padding-top: 5px;
 }
 
 .job {
     width: 100% !important;
+}
+
+@media print {
+    body {
+        background: #fff;
+        margin-bottom: 0;
+    }
+
+    .resume-theme {
+        background: #fff !important;
+        box-shadow: none !important;
+        color: #000 !important;
+    }
+
+    .resume-theme .stacked-theme-section {
+        border: 0 !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        page-break-inside: avoid;
+    }
+
+    .section {
+        break-inside: avoid;
+    }
 }

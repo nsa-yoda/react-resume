@@ -1,13 +1,36 @@
+:root {
+  --resume-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --resume-font-serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua',
+    Palatino, 'URW Palladio L', serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: #f5efe2;
+  color: #1a1916;
+  font-family: var(--resume-font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.resume-theme.resume-font-sans {
+  font-family: var(--resume-font-sans);
+}
+
+.resume-theme.resume-font-serif {
+  font-family: var(--resume-font-serif);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--resume-font-sans);
 }

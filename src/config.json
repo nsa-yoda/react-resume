@@ -7,6 +7,8 @@
     "title": "Education"
   },
   "experience": {
+    "displayLongResponsibility": false,
+    "displayShortResponsibility": true,
     "title": "Experience",
     "workType": [
       {"short": "C", "long": "Contract", "metaType": "contract"},

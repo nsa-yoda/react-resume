@@ -1,7 +1,33 @@
+:root {
+  --resume-accent: rgba(25, 5, 255, 0.4);
+  --resume-bg: #fff;
+  --resume-border: rgba(18, 16, 10, 0.12);
+  --resume-muted: #6f6556;
+  --resume-panel-bg: rgba(255, 255, 255, 0.96);
+  --resume-shadow: 0 18px 45px rgba(18, 16, 10, 0.08);
+  --resume-text: #1a1916;
+}
+
 .App {
+  color: var(--resume-text);
 }
 
-.exp-container{
-    margin-bottom: 100px;
+.exp-container {
+  margin-bottom: 100px;
 }
 
+.resume-badge {
+  border: 1px solid var(--resume-border);
+  border-radius: 999px;
+  color: var(--resume-muted);
+  display: inline-flex;
+  font-size: 0.75rem;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  vertical-align: middle;
+}
+
+.resume-bullets {
+  margin: 0;
+  padding-left: 1.2rem;
+}

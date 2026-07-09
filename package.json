@@ -17,20 +17,22 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.30.4",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^4.2.1"
+    "web-vitals": "^4.2.1",
+    "yaml": "^2.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "typecheck": "tsc --noEmit",
+    "validate-data": "node scripts/validate-data.mjs",
+    "migrate-data": "node scripts/migrate-data.mjs",
+    "migrate-data:yaml": "node scripts/migrate-data.mjs yaml",
+    "migrate-data-to-v2": "node scripts/migrate-data.mjs json",
+    "migrate-data-to-v2:yaml": "node scripts/migrate-data.mjs yaml",
+    "import:json-resume": "node scripts/import-json-resume.mjs",
     "eject": "react-scripts eject",
     "prepare": "husky install"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -52,10 +54,14 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.7",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/node": "^24.3.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@typescript-eslint/parser": "5.62.0",
     "@eslint/compat": "^1.1.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.6.0",
-    "eslint": "^9.26.0",
+    "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
@@ -66,13 +72,13 @@
     "globals": "^15.8.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.5.2",
-    "prettier": "^3.3.2"
+    "prettier": "^3.3.2",
+    "typescript": "^4.9.5"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,mjs,cjs,ts,tsx}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }

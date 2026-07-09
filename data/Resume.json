@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "theme": {
+    "active": "classic"
+  },
+  "layout": {
+    "sections": [
+      "information",
+      "summary",
+      "glance",
+      "skills",
+      "experience",
+      "education",
+      "achievements",
+      "publications"
+    ]
+  },
+  "highlights": [
+    "node",
+    "nodejs",
+    "react",
+    "reactjs",
+    "javascript",
+    "typescript"
+  ],
+  "audiences": {
+    "default": {},
+    "public": {
+      "hideContact": true
+    },
+    "recruiter": {}
+  },
+  "sections": [
+    {
+      "id": "information",
+      "type": "information",
+      "title": "Information",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "name": {
+          "first": "Johnny",
+          "middle": "B.",
+          "last": "Good"
+        },
+        "title": "Software Engineer",
+        "meta": {
+          "location": "Everytown, USA",
+          "phone": "+1 123-456-7890",
+          "email": {
+            "address": "example@example.com",
+            "link": false
+          },
+          "socials": [
+            "https://facebook.com/okok",
+            "https://twitter.com/okok",
+            "https://linkedin.com/in/okok"
+          ],
+          "display": true
+        }
+      }
+    },
+    {
+      "id": "summary",
+      "type": "summary",
+      "title": "Summary",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "content": [
+          "I am a seasoned software engineer with 15 years of experience, proficient in JavaScript, Python, Go, PHP, and SQL. I excel in full-stack development and system design, known for delivering scalable and efficient software solutions."
+        ]
+      }
+    },
+    {
+      "id": "glance",
+      "type": "glance",
+      "title": "At A Glance",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "items": [
+          "15 years of professional experience as a software engineer",
+          "Proficient in multiple programming languages and frameworks",
+          "Strong academic record with degrees from MIT, Stanford, and Harvard",
+          "Expert in full-stack development, system design, and cloud computing",
+          "Proven track record of delivering scalable and efficient software solutions",
+          "Excellent teamwork and leadership skills developed through various roles",
+          "Quick learner, attentive listener, and adaptable to new technologies",
+          "Strong communication skills with a friendly and professional demeanor"
+        ]
+      }
+    },
+    {
+      "id": "skills",
+      "type": "skills",
+      "title": "Skills",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "columns": 4,
+        "arrow": "❯",
+        "items": [
+          "JavaScript",
+          "Python",
+          "Go",
+          "PHP",
+          "SQL",
+          "React",
+          "Laravel",
+          "Symfony",
+          "Flask",
+          "Drupal",
+          "System Design",
+          "Cloud Computing",
+          "Agile Methodologies",
+          "Problem Solving",
+          "Project Management",
+          "Code Review",
+          "CI/CD",
+          "Adaptability",
+          "Self-Motivated",
+          "Organization"
+        ]
+      }
+    },
+    {
+      "id": "experience",
+      "type": "experience",
+      "title": "Experience",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "displayLongResponsibility": false,
+        "displayShortResponsibility": true,
+        "workType": [
+          {
+            "short": "C",
+            "long": "Contract",
+            "metaType": "contract"
+          },
+          {
+            "short": "FT",
+            "long": "Full Time",
+            "metaType": "full-time"
+          },
+          {
+            "short": "PT",
+            "long": "Part Time",
+            "metaType": "part-time"
+          },
+          {
+            "short": "I",
+            "long": "Internship",
+            "metaType": "internship"
+          },
+          {
+            "short": "W",
+            "long": "Weekend",
+            "metaType": "weekend"
+          }
+        ],
+        "workTypeKey": "Key",
+        "items": [
+          {
+            "company": {
+              "name": "Google",
+              "type": "Technology",
+              "location": "Mountain View, CA"
+            },
+            "meta": {
+              "display": true,
+              "class": "google",
+              "type": "full-time",
+              "remote": "remote"
+            },
+            "dates": {
+              "start": "2018-05-01",
+              "end": "Present"
+            },
+            "title": "Senior Software Engineer",
+            "responsibility": "Led the development of scalable web applications, mentored junior developers, and implemented CI/CD pipelines.",
+            "short": "Led the development of scalable web applications",
+            "bullets": [
+              "Led the development of scalable web applications",
+              "mentored junior developers",
+              "and implemented CI/CD pipelines."
+            ]
+          },
+          {
+            "company": {
+              "name": "Amazon",
+              "type": "Cloud Computing",
+              "location": "Seattle, WA"
+            },
+            "meta": {
+              "display": true,
+              "class": "amazon",
+              "type": "full-time",
+              "remote": "hybrid"
+            },
+            "dates": {
+              "start": "2013-08-01",
+              "end": "2018-04-30"
+            },
+            "title": "Software Engineer",
+            "responsibility": "Developed and maintained software solutions, collaborated with cross-functional teams, and performed code reviews to ensure high-quality code.",
+            "short": "Developed and maintained software solutions",
+            "bullets": [
+              "Developed and maintained software solutions",
+              "collaborated with cross-functional teams",
+              "and performed code reviews to ensure high-quality code."
+            ]
+          },
+          {
+            "company": {
+              "name": "Facebook",
+              "type": "Social Media",
+              "location": "Menlo Park, CA"
+            },
+            "meta": {
+              "display": true,
+              "class": "facebook",
+              "type": "full-time",
+              "remote": "on-site"
+            },
+            "dates": {
+              "start": "2008-01-01",
+              "end": "2013-07-31"
+            },
+            "title": "Full-Stack Developer",
+            "responsibility": "Worked on front-end and back-end development, optimized database queries, and implemented responsive design practices.",
+            "short": "Worked on front-end and back-end development",
+            "bullets": [
+              "Worked on front-end and back-end development",
+              "optimized database queries",
+              "and implemented responsive design practices."
+            ]
+          },
+          {
+            "company": {
+              "name": "Microsoft",
+              "type": "Technology",
+              "location": "Redmond, WA"
+            },
+            "meta": {
+              "display": true,
+              "class": "microsoft",
+              "type": "full-time",
+              "remote": "on-site"
+            },
+            "dates": {
+              "start": "2006-06-01",
+              "end": "2007-12-31"
+            },
+            "title": "Junior Software Developer",
+            "responsibility": "Assisted in the development of web applications, wrote unit tests, and participated in agile development processes.",
+            "short": "Assisted in the development of web applications",
+            "bullets": [
+              "Assisted in the development of web applications",
+              "wrote unit tests",
+              "and participated in agile development processes."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "education",
+      "type": "education",
+      "title": "Education",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "items": [
+          {
+            "degree": {
+              "short_name": "B.S in Computer Science",
+              "long_name": "Bachelor of Science in Computer Science, Summa Cum Laude | 3.95 GPA"
+            },
+            "school": {
+              "name": "MIT",
+              "location": "Cambridge, MA"
+            },
+            "dates": {
+              "showDate": true,
+              "start": "2002-09-01",
+              "end": "2006-06-01"
+            },
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "degree": {
+              "short_name": "M.S in Computer Science",
+              "long_name": "Master of Science in Computer Science, Honors | 4.0 GPA"
+            },
+            "school": {
+              "name": "Stanford University",
+              "location": "Stanford, CA"
+            },
+            "dates": {
+              "showDate": true,
+              "start": "2006-09-01",
+              "end": "2008-06-01"
+            },
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "degree": {
+              "short_name": "Ph.D. in Computer Science",
+              "long_name": "Ph.D. in Computer Science | Focus on Artificial Intelligence and Machine Learning"
+            },
+            "school": {
+              "name": "Harvard University",
+              "location": "Cambridge, MA"
+            },
+            "dates": {
+              "showDate": true,
+              "start": "2008-09-01",
+              "end": "2012-06-01"
+            },
+            "meta": {
+              "display": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "achievements",
+      "type": "achievements",
+      "title": "Awards, Achievements, and Certifications",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "displaySeparator": true,
+        "items": [
+          {
+            "name": "Published Author of Multiple Technical Articles",
+            "description": "Authored several well-received articles on full-stack development, system design, and cloud computing.",
+            "year": "2010-Present",
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "name": "Developed and Released Popular Software Tools",
+            "description": "Created widely-used tools like DevFlow, CodeGuard, and CloudSync, which have received accolades in the tech community.",
+            "year": "2015-Present",
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "name": "Guest Speaker at Tech Conferences",
+            "description": "Invited to speak at prestigious conferences such as TechCrunch Disrupt, Google I/O, and AWS re:Invent.",
+            "year": "2012-Present",
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "name": "Ph.D. in Computer Science from Harvard University",
+            "description": "Completed a Ph.D. with a focus on Artificial Intelligence and Machine Learning.",
+            "year": "2012",
+            "meta": {
+              "display": true
+            }
+          },
+          {
+            "name": "Recipient of the ACM Distinguished Engineer Award",
+            "description": "Recognized for significant contributions to the field of computer science and software engineering.",
+            "year": "2020",
+            "meta": {
+              "display": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "publications",
+      "type": "publications",
+      "title": "Publications and Software",
+      "display": true,
+      "audiences": [
+        "default",
+        "public",
+        "recruiter"
+      ],
+      "data": {
+        "displaySeparator": true,
+        "items": [
+          {
+            "name": "Optimizing Full-Stack Development for Scalability",
+            "description": "An in-depth guide on building scalable full-stack applications.",
+            "url": "https://example.com/optimizing-full-stack-development",
+            "display": true
+          },
+          {
+            "name": "Advanced Techniques in System Design",
+            "description": "A comprehensive resource on advanced system design methodologies.",
+            "url": "https://example.com/advanced-system-design",
+            "display": true
+          },
+          {
+            "name": "Cloud Computing Best Practices",
+            "description": "A detailed exploration of best practices in cloud computing.",
+            "url": "https://example.com/cloud-computing-best-practices",
+            "display": true
+          },
+          {
+            "name": "DevFlow",
+            "description": "An innovative CI/CD pipeline tool for streamlined software deployment.",
+            "url": "https://example.com/devflow",
+            "display": true
+          },
+          {
+            "name": "CodeGuard",
+            "description": "A robust code review and quality assurance tool for development teams.",
+            "url": "https://example.com/codeguard",
+            "display": true
+          },
+          {
+            "name": "CloudSync",
+            "description": "A seamless file synchronization solution for cloud storage services.",
+            "url": "https://example.com/cloudsync",
+            "display": true
+          }
+        ]
+      }
+    }
+  ]
+}
