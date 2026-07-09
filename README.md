@@ -7,18 +7,44 @@
 
 ## Getting Started
 
-1. Fill out the JSON files within the `data/` directory (see [Data Directory](#data-directory) below)
+1. Edit the canonical `data/Resume.json` document, or migrate your legacy data files with `pnpm run migrate-data-to-v2`
 2. Edit `public/index.html` with the correct page `<title/>`.
-3. Run `npm install` to install the requirements.
-4. Run `npm run start` to start the development server.
+3. Run `pnpm install` to install the requirements.
+4. Run `pnpm run start` to start the development server.
+
+## Multi-Theme and Authoring
+
+- Preview themes with `/?theme=classic`, `/?theme=stacked`, or `/theme/stacked`
+- Toggle typography with `?font=sans` or `?font=serif`
+- Open the local editor at `/editor`
+- Limit sections with `?sections=summary,skills,experience`
+- Preview audience-specific variants with `?audience=public` or `?audience=recruiter`
+- Hide contact details with `?contact=hide`
+- Print-friendly mode is available with `?print=1`
+
+## Data Workflow
+
+- `data/Resume.json` is the canonical runtime and authoring document
+- `data/Resume.yaml` is an optional alternate authoring/export format, but the app runtime imports `Resume.json`
+- legacy per-section `data/*.json` files are supported as migration inputs, but are not shipped in the cleaned-up repo by default
+- `pnpm run validate-data` validates the canonical resume document
+- `pnpm run migrate-data` generates `data/Resume.json` from the legacy section files
+- `pnpm run migrate-data:yaml` exports the legacy section files into `data/Resume.yaml`
+- `pnpm run migrate-data-to-v2` is the explicit alias for generating the canonical v2 `data/Resume.json`
+- `pnpm run migrate-data-to-v2:yaml` exports the same v2 document as `data/Resume.yaml`
+- `pnpm run import:json-resume -- <path>` imports a [JSON Resume](https://jsonresume.org/) file into `data/Resume.json`
+
+The `migrate-*` commands are for older checkouts or user data sets that still contain the legacy per-section JSON files in `data/`.
+
+Starter templates are available in the in-app editor at `/editor`.
 
 ## Features
 
 ### Highlighter
 
-Within the [Data Directory](#data-directory), you'll find a file named `Highlighter.json`
+Within the canonical `Resume.json` document, you'll find a top-level `highlights` array.
 
-This file contains a JSON list of terms that will be wrapped in a `<mark></mark>` HTML tag. 
+This list contains terms that will be wrapped in a `<mark></mark>` HTML tag.
 Which will give that term, when matched, a highlighted look. It is case-insensitive and punctuation independent. 
 
 The JSON looks as follows:
@@ -34,12 +60,14 @@ The JSON looks as follows:
 > ]
 > ```
 
-**THIS ONLY APPLIES TO `EXPERIENCE.RESPONSIBILITIES`**
+> [!IMPORTANT]  
+> This feature is only available for the `experience.responsibility` section.
 
 ### Hide Contact Info
 
 **Scenario**: A recruiter or company wants a copy of your resume, but does not want the 
-contact information to be shown. However, you don't want to modify your `Information.json` 
+contact information to be shown. However, you don't want to modify your `information`
+section in `Resume.json`
 to change `display` to `false` only for this one instance. 
 
 So what do you do? You append `?contact=hide` to the url, as follows:
@@ -50,14 +78,28 @@ This will cause the contact information to be hidden dynamically.
 
 ## Data Directory
 
+The project now supports two authoring modes:
+
+- recommended: edit `data/Resume.json`
+- compatibility mode: edit the legacy per-section JSON files and run `pnpm run migrate-data-to-v2`
+
+The repo ships only `data/Resume.json` by default.
+
+In the canonical v2 document, each section lives under `sections[]`, and the examples below describe the payload stored in that section's `data` field. The legacy per-file shapes and `Resume.yaml` are still supported by the tooling, but `Resume.json` is the primary source of truth.
+
 #### Summary
 
 > A brief summary of your professional profile. Keep it concise, ideally within 2 sentences.
 >
-> The JSON looks like this:
+> In `Resume.json`, the data looks like this:
 > 
 > ```json
-> ["Your summary goes here"]
+> {
+>   "content": [
+>     "Your summary goes here",
+>     "Optional second paragraph"
+>   ]
+> }
 > ```
 > 
 
@@ -147,9 +189,9 @@ profiles.
 #### Experience 
 
 > Your work experience. Specify details such as company name, type, location, job title, start
-and end dates, and responsibilities. Pay attention to:
-> - `meta.type`: Options include "full-time", "part-time", "contract", "internship", and "weekend"
-> - `meta.remote`: Options include "remote", "hybrid", "on-site".
+and end dates, and responsibility. Pay attention to:
+> - `meta.type`: One of [`full-time`, `part-time`, `contract`, `internship`, `weekend`]
+> - `meta.remote`: One of [`remote`, `hybrid`, `on-site`]
 >
 > The JSON looks like this:
 > 
@@ -172,7 +214,8 @@ and end dates, and responsibilities. Pay attention to:
 >           "end": "Present"
 >       },
 >       "title": "Senior Software Engineer",
->       "responsibilities": "Led the development of scalable web applications"
+>       "responsibility": "Led the development of scalable web applications",
+>       "short": "Led development"
 >   }
 > ]
 > ```
@@ -196,7 +239,11 @@ and end dates, and responsibilities. Pay attention to:
 > - `dates.start` your start date, in format YYYY-MM-DD
 > - `dates.end` your end date, in format YYYY-MM-DD - or "present" or "Present"
 > - `title` is your professional title at the role
-> - `responsibilities` is where you define your responsibilities in the role/company
+> - `responsibility` is where you define your responsibilities in the role/company
+> - `short` is a shortened version of your responsibilities
+
+> [!NOTE]  
+> Toggling the `displayLongResponsibility` and `displayShortResponsibility` options will change the appearance of the `responsibility` section.
 
 #### Education
 
@@ -291,7 +338,7 @@ Prettier is set up to run on git commit.
 
 In the project directory, you can run:
 
-### `npm start`
+### `pnpm run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -299,13 +346,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `pnpm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more
 information.
 
-### `npm run build`
+### `pnpm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -315,7 +362,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `pnpm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

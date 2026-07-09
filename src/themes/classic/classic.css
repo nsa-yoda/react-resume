@@ -1,0 +1,19 @@
+.resume-theme-classic {
+  --resume-bg: #fff;
+  --resume-text: inherit;
+  --resume-container-width: 70%;
+  background: var(--resume-bg);
+  color: var(--resume-text);
+}
+
+.resume-theme-classic .exp-container {
+  max-width: var(--resume-container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+.resume-theme-classic .section {
+  margin-bottom: 1.6rem;
+}

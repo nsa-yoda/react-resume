@@ -1,0 +1,29 @@
+.resume-theme-stacked {
+  --resume-bg: linear-gradient(180deg, #f4efe3 0%, #e5dcc8 100%);
+  --resume-text: #2d2418;
+  --resume-panel-bg: rgba(255, 252, 245, 0.92);
+  --resume-panel-border: rgba(104, 78, 45, 0.18);
+  background: var(--resume-bg);
+  color: var(--resume-text);
+  min-height: 100vh;
+}
+
+.resume-theme-stacked .stacked-theme-shell {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
+.resume-theme-stacked .stacked-theme-section {
+  background: var(--resume-panel-bg);
+  border: 1px solid var(--resume-panel-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(45, 36, 24, 0.08);
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+}
+
+.resume-theme-stacked .stacked-theme-section .section:last-child,
+.resume-theme-stacked .stacked-theme-section #summary:last-child,
+.resume-theme-stacked .stacked-theme-section #vital_information:last-child {
+  margin-bottom: 0;
+}
