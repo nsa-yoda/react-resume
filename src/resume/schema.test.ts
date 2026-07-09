@@ -1,4 +1,4 @@
-import { expect, it } from '@jest/globals'
+import { expect, it } from 'vitest'
 import { validateResumeDocument } from './schema'
 import canonicalResume from '../../data/Resume.json'
 

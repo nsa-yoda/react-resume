@@ -16,7 +16,7 @@ export default function LinkList<T>({
   className = '',
   items = [],
   renderItem,
-}: LinkListProps<T>): JSX.Element {
+}: LinkListProps<T>) {
   return (
     <ul className={className}>
       {items.map((item, index) => (

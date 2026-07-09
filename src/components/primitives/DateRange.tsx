@@ -12,7 +12,7 @@ export default function DateRange({
   end = '',
   start,
   title,
-}: DateRangeProps): JSX.Element {
+}: DateRangeProps) {
   return (
     <div className={className} title={title}>
       {formatDate(start)}

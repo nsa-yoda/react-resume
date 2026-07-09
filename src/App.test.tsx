@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react'
 import App from './App'
 import React from 'react'
-import '@testing-library/jest-dom'
-import { afterEach, expect, it, jest } from '@jest/globals'
+import { afterEach, expect, it, vi } from 'vitest'
 
-jest.mock('normalize-url', () => url => url)
+vi.mock('normalize-url', () => ({
+  default: (url: string) => url,
+}))
 
 afterEach(() => {
   window.history.pushState({}, '', '/')

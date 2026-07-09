@@ -9,9 +9,7 @@ interface PublicationsData extends ListSectionData<PublicationItem> {
   displaySeparator: boolean
 }
 
-const PublicationFactory = (
-  publicationsSection: PublicationsData
-): JSX.Element => {
+const PublicationFactory = (publicationsSection: PublicationsData) => {
   return (
     <DetailRows
       asideClassName='blue-span'
@@ -29,7 +27,7 @@ const PublicationFactory = (
   )
 }
 
-export default function Publications(): JSX.Element | false {
+export default function Publications() {
   const { isVisible, section } = useResumeSection('publications')
   const publications = useResumeSectionData<PublicationsData>('publications', {
     displaySeparator: true,

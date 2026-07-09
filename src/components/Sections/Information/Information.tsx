@@ -29,7 +29,7 @@ const renderSocial = (social: string): React.ReactNode => {
   return social
 }
 
-export default function Information(): JSX.Element | false {
+export default function Information() {
   const { isVisible } = useResumeSection('information')
   const information = useResumeSectionData<InformationData>('information', {
     meta: {

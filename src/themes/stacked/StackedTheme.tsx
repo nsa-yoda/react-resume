@@ -9,9 +9,7 @@ interface StackedThemeProps {
   sections: ThemeSection[]
 }
 
-export default function StackedTheme({
-  sections,
-}: StackedThemeProps): JSX.Element {
+export default function StackedTheme({ sections }: StackedThemeProps) {
   const { font = 'sans' } = useViewOptions()
 
   return (
