@@ -10,7 +10,7 @@ export default function Section({
   children,
   className = '',
   id,
-}: SectionProps): JSX.Element {
+}: SectionProps) {
   return (
     <div className={`section ${className}`.trim()} id={id}>
       {children}

@@ -1,6 +1,6 @@
 import './Footer.css'
 
-export default function Footer(): JSX.Element {
+export default function Footer() {
   return (
     <footer className='footer'>
       <div className='container' />

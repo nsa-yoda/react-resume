@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ResumeEditor from './editor/ResumeEditor'
 import ResumePage from './ResumePage'
 
-export default function App(): JSX.Element {
+export default function App() {
   return (
     <BrowserRouter>
       <Routes>

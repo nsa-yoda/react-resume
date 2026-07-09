@@ -7,6 +7,7 @@ import tsParser from '@typescript-eslint/parser'
 const sharedRules = {
   'react/react-in-jsx-scope': 'off',
   'react/prop-types': 'off',
+  'react-hooks/static-components': 'off',
   'react/jsx-no-bind': 'off',
   'react/jsx-no-literals': 'off',
   'react/no-multi-comp': 'off',
@@ -34,7 +35,7 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
-        ...globals.jest,
+        ...globals.vitest,
       },
     },
     settings: {

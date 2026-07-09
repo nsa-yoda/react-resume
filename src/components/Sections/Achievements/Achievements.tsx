@@ -8,9 +8,7 @@ interface AchievementsData extends ListSectionData<AchievementItem> {
   displaySeparator: boolean
 }
 
-const AchievementsFactory = (
-  achievementsSection: AchievementsData
-): JSX.Element => {
+const AchievementsFactory = (achievementsSection: AchievementsData) => {
   return (
     <DetailRows
       asideClassName='blue-span'
@@ -24,7 +22,7 @@ const AchievementsFactory = (
   )
 }
 
-export default function Achievements(): JSX.Element | false {
+export default function Achievements() {
   const { isVisible, section } = useResumeSection('achievements')
   const achievements = useResumeSectionData<AchievementsData>('achievements', {
     displaySeparator: true,

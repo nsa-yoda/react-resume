@@ -7,9 +7,7 @@ import { Highlighter } from '../../../utils'
 import { useResumeSection, useResumeSectionData } from '../../../resume/context'
 import type { ExperienceData } from '../../../resume/types'
 
-const ExperienceFactory = (
-  experienceSection: ExperienceData
-): JSX.Element[] => {
+const ExperienceFactory = (experienceSection: ExperienceData) => {
   const metaTypeFinder = (metaType: string): string => {
     const workType = experienceSection.workType || []
     const type = workType.find(item => item.metaType === metaType)
@@ -96,7 +94,7 @@ const generateWorkTypeKey = (experienceSection: ExperienceData): string => {
     .join(', ')} «`
 }
 
-export default function Experience(): JSX.Element | false {
+export default function Experience() {
   const { isVisible, section } = useResumeSection('experience')
   const experiences = useResumeSectionData<ExperienceData>('experience', {
     displayLongResponsibility: false,

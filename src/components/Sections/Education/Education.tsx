@@ -5,7 +5,7 @@ import DateRange from '../../primitives/DateRange'
 import { useResumeSection, useResumeSectionData } from '../../../resume/context'
 import type { EducationItem, ListSectionData } from '../../../resume/types'
 
-function EducationFactory(items: EducationItem[]): JSX.Element[] {
+function EducationFactory(items: EducationItem[]) {
   return items.map((edu, index) => {
     const outerClass = 'row w-100'
     let innerClass = 'title col-9'
@@ -40,7 +40,7 @@ function EducationFactory(items: EducationItem[]): JSX.Element[] {
   })
 }
 
-export default function Education(): JSX.Element | false {
+export default function Education() {
   const { isVisible, section } = useResumeSection('education')
   const education = useResumeSectionData<ListSectionData<EducationItem>>(
     'education',

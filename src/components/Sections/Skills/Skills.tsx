@@ -4,8 +4,8 @@ import SectionTitle from '../../primitives/SectionTitle'
 import { useResumeSection, useResumeSectionData } from '../../../resume/context'
 import type { SkillsData } from '../../../resume/types'
 
-const SkillsFactory = (skillsSection: SkillsData): JSX.Element[] => {
-  const output: JSX.Element[] = []
+const SkillsFactory = (skillsSection: SkillsData) => {
+  const output = []
   const arrow = skillsSection.arrow || '\u276F'
   const skillsColumns = skillsSection.columns || 4
   const sliceLen = Math.ceil(skillsSection.items.length / skillsColumns)
@@ -25,7 +25,7 @@ const SkillsFactory = (skillsSection: SkillsData): JSX.Element[] => {
   return output
 }
 
-export default function Skills(): JSX.Element | false {
+export default function Skills() {
   const { isVisible, section } = useResumeSection('skills')
   const skills = useResumeSectionData<SkillsData>('skills', {
     arrow: '\u276F',

@@ -19,7 +19,7 @@ export default function DetailRows({
   renderAside,
   showSeparator = true,
   titleFor,
-}: DetailRowsProps<any>): JSX.Element {
+}: DetailRowsProps<any>) {
   return (
     <>
       {items.map((item, index) => (

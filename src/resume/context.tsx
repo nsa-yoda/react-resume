@@ -38,7 +38,7 @@ export function ResumeProvider({
   children,
   document = resumeDocument,
   view = {},
-}: ResumeProviderProps): JSX.Element {
+}: ResumeProviderProps) {
   return (
     <ResumeContext.Provider
       value={{

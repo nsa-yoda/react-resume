@@ -8,7 +8,7 @@ interface ResumeLayoutProps {
 export default function ResumeLayout({
   children,
   className = '',
-}: ResumeLayoutProps): JSX.Element {
+}: ResumeLayoutProps) {
   return (
     <div className={`container exp-container ${className}`.trim()}>
       {children}

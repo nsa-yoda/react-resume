@@ -9,9 +9,7 @@ interface ClassicThemeProps {
   sections: ThemeSection[]
 }
 
-export default function ClassicTheme({
-  sections,
-}: ClassicThemeProps): JSX.Element {
+export default function ClassicTheme({ sections }: ClassicThemeProps) {
   const { font = 'sans' } = useViewOptions()
 
   return (

@@ -37,7 +37,7 @@ export default function ResumeRenderer({
   sectionOverride,
   themeOverride,
   view = {},
-}: ResumeRendererProps): JSX.Element {
+}: ResumeRendererProps) {
   const Theme = resolveTheme(
     themeOverride || document.theme?.active || 'classic'
   )

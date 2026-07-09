@@ -4,6 +4,6 @@ interface BadgeProps {
   children: ReactNode
 }
 
-export default function Badge({ children }: BadgeProps): JSX.Element {
+export default function Badge({ children }: BadgeProps) {
   return <span className='resume-badge'>{children}</span>
 }

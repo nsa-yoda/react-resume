@@ -3,7 +3,7 @@ import Section from '../../primitives/Section'
 import { useResumeSection, useResumeSectionData } from '../../../resume/context'
 import type { SummaryData } from '../../../resume/types'
 
-export default function Summary(): JSX.Element | false {
+export default function Summary() {
   const { isVisible } = useResumeSection('summary')
   const summary = useResumeSectionData<SummaryData>('summary', { content: [] })
 

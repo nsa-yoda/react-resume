@@ -5,7 +5,7 @@ import { replaceYearsExperience } from '../../../utils'
 import { useResumeSection, useResumeSectionData } from '../../../resume/context'
 import type { ListSectionData } from '../../../resume/types'
 
-const AtAGlanceFactory = (items: string[]): JSX.Element[] => {
+const AtAGlanceFactory = (items: string[]) => {
   return items.map((datum, index) => {
     return (
       <div className='row' key={index}>
@@ -15,7 +15,7 @@ const AtAGlanceFactory = (items: string[]): JSX.Element[] => {
   })
 }
 
-export default function Glance(): JSX.Element | false {
+export default function Glance() {
   const { isVisible, section } = useResumeSection('glance')
   const glance = useResumeSectionData<ListSectionData<string>>('glance', {
     items: [],
