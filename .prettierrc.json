@@ -15,8 +15,6 @@
 
   "trailingComma": "es5",
 
-  "parser": "flow",
-
   "quoteProps": "as-needed",
   "requirePragma": false
 }
