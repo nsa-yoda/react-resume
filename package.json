@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "normalize-url": "^9.0.1",
-    "react": "^19.2.7",
+    "react": "^19.2.8",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1",
     "yaml": "^2.9.0"
